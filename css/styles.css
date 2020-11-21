@@ -1,0 +1,12 @@
+:root {
+  /* colors */
+  --first-color: #fc0;
+  --second-color: #000;
+  --light-bg: #fafafa;
+  --dark-bg: #263238;
+  --text-color: #2121;
+  --ligth-text: #6161;
+  /* font family */
+  --font-oswald: 'Oswald', sans-serif;
+  --font-robotocond: 'Roboto Condensed', sans-serif;
+}
