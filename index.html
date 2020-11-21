@@ -11,54 +11,58 @@
   <script src="https://kit.fontawesome.com/2940e283c9.js" crossorigin="anonymous"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__top">
-      <div class="container-fluid">
-        <div class="header__choose-lang">
-          <select class="choose-lang__form">
-            <option class="choose-lang__item">Español</option>
-            <option class="choose-lang__item">English</option>
-            <option class="choose-lang__item">Français</option>
-            <option class="choose-lang__item">Português</option>
-          </select>
-        </div>
-        <div class="header__log">
-          <a href="#" class="log__link">Iniciar Sesión</a>
-          <a href="#" class="log__link">Registrarse</a>
-        </div>
+  <header class="container-fluid header">
+    <div class="container flex jc-space-between header__top">
+      <div class="item header__choose-lang">
+        <select class="choose-lang__form">
+          <option class="choose-lang__item">Español</option>
+          <option class="choose-lang__item">English</option>
+          <option class="choose-lang__item">Français</option>
+          <option class="choose-lang__item">Português</option>
+        </select>
+      </div>
+      <div class="item header__log">
+        <a href="#" class="v-bottom log__link">Iniciar Sesión</a>
+        <a href="#" class="v-bottom log__link">Registrarse</a>
       </div>
     </div>
-    <nav class="header__main-nav">
-      <div class="header__main-menu">
-        <input type="checkbox" id="main-menu__btn">
-        <label for="main-menu__btn">
-          <i class="fa fa-bars"></i>
-        </label>
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Inicio</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Productos</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Noticias</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Galería</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__logo">
-        <img src="" alt="Escudo Club Astucia" class="header__img">
-      </div>
-      <div class="header__search">
-        <button class="search__btn">
-          <i class="fas fa-search"></i>
-        </button>
+    <nav class="container-fluid bg-dark txt-white header__main-nav">
+      <div class="container flex jc-space-between">
+        <div class="item header__main-menu">
+          <input type="checkbox" id="main-menu__checkbox" class="none">
+          <label for="main-menu__checkbox" class="main-menu__bars">
+            <i class="fa fa-bars h1"></i>
+          </label>
+          <ul class="nobullet bg-dark txt-first center main-menu__list">
+            <li class="main-menu__item">
+              <a href="#" class="block main-menu__link">Inicio</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="block main-menu__link">Productos</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="block main-menu__link">Noticias</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="block main-menu__link">Galería</a>
+            </li>
+          </ul>
+        </div>
+        <div class="item header__logo">
+          <a href="#" class="header__home-link">
+            <img src="img/CA-logo.svg" alt="Escudo Club Astucia" class="header__img">
+          </a>
+        </div>
+        <div class="item header__search">
+          <a href="#" class="h1 search__btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
       </div>
     </nav>
   </header>

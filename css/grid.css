@@ -1,0 +1,18 @@
+.container, .container-fluid {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.container {
+  max-width: 1200px;
+  /* background-color: green; */
+}
+
+.item {
+  display: block;
+  padding: 16px;
+  padding: 1rem;
+  /* background-color: aqua; */
+}
