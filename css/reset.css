@@ -55,7 +55,10 @@ html {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body { overflow-x: hidden; }
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
 *, *::after, *::before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;

@@ -55,13 +55,26 @@ h5, .h5 { font-size: 1.25rem; }
 h6, .h6 { font-size: 1rem; }
 
 /* colors and fonts */
-.bg-dark    { background-color: var(--dark-bg); }
-.bg-light   { background-color: var(--light-bg); }
+.bg-dark  { background-color: var(--dark-bg); }
+.bg-light { background-color: var(--light-bg); }
 .txt-dark   { color: var(--text-color); }
 .txt-light  { color: var(--ligth-text); }
 .txt-first  { color: var(--first-color); }
 .txt-second { color: var(--second-color); }
 .txt-white  { color: #fff; }
-.tiny       { font-weight: var(--font-tiny); }
-.normal     { font-weight: var(--font-normal); }
-.bold       { font-weight: var(--font-bold); }
+.txt-heading { font-family: var(--font-oswald); }
+.txt-body    { font-family: var(--font-robotocond); }
+.tiny   { font-weight: var(--font-tiny); }
+.normal { font-weight: var(--font-normal); }
+.bold   { font-weight: var(--font-bold); }
+
+/* buttons */
+.btn {
+  display: block;
+  border-radius: 5px;
+  font-weight: var(--font-bold);
+}
+.btn--transparent:hover {
+  background-color: var(--light-bg);
+  color: var(--ligth-text);
+}

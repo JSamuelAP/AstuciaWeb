@@ -4,8 +4,13 @@
   width: 100%;
   margin: 0 auto;
 }
-.container { max-width: 1200px; }
-.item { padding: 0 1rem; }
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+/* .item { padding: 0 1rem; } */
+
+.f0 { font-size: 0; }
 
 /* Reticula base de 12 columnas */
 /* small: 480px */
