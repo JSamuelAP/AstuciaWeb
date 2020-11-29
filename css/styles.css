@@ -62,6 +62,7 @@ h6, .h6 { font-size: 1rem; }
 .txt-first  { color: var(--first-color); }
 .txt-second { color: var(--second-color); }
 .txt-white  { color: #fff; }
+.hover-txt-first:hover { color: var(--first-color); }
 .txt-heading { font-family: var(--font-oswald); }
 .txt-body    { font-family: var(--font-robotocond); }
 .tiny   { font-weight: var(--font-tiny); }
@@ -78,3 +79,23 @@ h6, .h6 { font-size: 1rem; }
   background-color: var(--light-bg);
   color: var(--ligth-text);
 }
+
+/* header */
+.main-menu__list {
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  transition: left .5s;
+}
+#main-menu__checkbox:checked ~ .main-menu__list { left: 0; }
+.main-menu__link:hover {
+  background-color: var(--second-color-alt);
+  color: var(--first-color);
+}
+.header__logo { position: relative; }
+.header__home-link {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.home-link__img { width: 55px; }
