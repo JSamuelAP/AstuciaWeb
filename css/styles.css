@@ -89,6 +89,16 @@ h6, .h6 { font-size: 1rem; }
   background-color: var(--light-bg);
   color: var(--ligth-text);
 }
+/* cards */
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px -8px var(--dark-bg);
+}
+.card__picture {
+  height: 175px;
+  overflow: hidden;
+}
 
 /* header */
 .header {
