@@ -89,6 +89,17 @@ h6, .h6 { font-size: 1rem; }
   background-color: var(--light-bg);
   color: var(--ligth-text);
 }
+.btn--ghost {
+  border: 3px solid;
+}
+.btn--ghost--dark {
+  color: var(--text-color);
+  border-color: var(--text-color)
+}
+.btn--ghost--dark:hover {
+  background-color: var(--text-color);
+  color: var(--first-color);
+}
 /* cards */
 .card {
   border-radius: 5px;
@@ -164,4 +175,22 @@ h6, .h6 { font-size: 1rem; }
 }
 .gallery__item:nth-child(9) {
   grid-column-start: span 2;
+}
+/* aside */
+.aside {
+  background-color: var(--first-color);
+}
+.team__logo {
+  height: 100px;
+}
+.team__img {
+  width: auto;
+  height: 100%;
+}
+.match__data i {
+  width: 15px;
+}
+.cup__img {
+  height: 100px;
+  width: auto;
 }
