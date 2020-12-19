@@ -91,6 +91,7 @@ h6, .h6 { font-size: 1rem; }
 }
 .btn--ghost {
   border: 3px solid;
+  background-color: transparent;
 }
 .btn--ghost--dark {
   color: var(--text-color);
@@ -99,6 +100,14 @@ h6, .h6 { font-size: 1rem; }
 .btn--ghost--dark:hover {
   background-color: var(--text-color);
   color: var(--first-color);
+}
+.btn--ghost--primary {
+  color: var(--first-color);
+  border-color: var(--first-color);
+}
+.btn--ghost--primary:hover {
+  background-color: var(--first-color-alt);
+  color: var(--text-color);
 }
 /* cards */
 .card {
@@ -149,6 +158,7 @@ h6, .h6 { font-size: 1rem; }
 /* Products */
 .products__product {
   box-shadow: 0 5px 10px -5px  var(--dark-bg);
+  border-radius: 5px;
 }
 .product__picture {
   width: 50%;
@@ -189,8 +199,49 @@ h6, .h6 { font-size: 1rem; }
 }
 .match__data i {
   width: 15px;
+  text-align: center;
 }
 .cup__img {
   height: 100px;
   width: auto;
+}
+/* footer */
+.footer__contact i {
+  width: 15px;
+  text-align: center;
+}
+.contact__email-link {
+  text-decoration: underline;
+}
+.newsletter__input {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+.newsletter__input:focus {
+  border-color: var(--first-color);
+}
+.newsletter__input:valid {
+  color: #7dff7d;
+}
+.newsletter__input:invalid {
+  color: #ff7171;
+}
+.newsletter__input::placeholder {
+  color: #fff;
+}
+.footer__follow-us a {
+  font-size: 40px;
+}
+.follow-us__links a:hover {
+  color: var(--first-color);
+}
+.sponsors__img {
+  width: 150px;
+}
+.sponsors__img:last-of-type {
+  margin: auto;
+}
+.footer__copyright a:hover {
+  color: var(--first-color);
 }
