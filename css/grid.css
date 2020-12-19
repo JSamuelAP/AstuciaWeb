@@ -29,6 +29,7 @@
 
 /* medium: 768px */
 @media screen and (min-width: 768px) {
+  .container {padding: 0 60px;}
   .md12 { width: 100%; }
   .md11 { width: calc(calc(11 * 100%) / 12); }
   .md10 { width: calc(calc(10 * 100%) / 12); }
