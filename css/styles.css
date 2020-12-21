@@ -119,6 +119,9 @@ h6, .h6 { font-size: 1rem; }
   height: 175px;
   overflow: hidden;
 }
+.card__img {
+  height: 100%;
+}
 
 /* header */
 .header {
@@ -248,6 +251,9 @@ h6, .h6 { font-size: 1rem; }
 
 /* 768px */
 @media screen and (min-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
   .header__logo {
     order: -1;
   }
@@ -261,10 +267,12 @@ h6, .h6 { font-size: 1rem; }
     left: 0;
     padding-left: 80px;
     background-color: transparent;
-    font-size: 1.4rem;
   }
   .product__picture {
     width: 60%;
     height: 170px;
+  }
+  .card__picture {
+    height: 165px;
   }
 }
