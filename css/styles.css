@@ -263,4 +263,8 @@ h6, .h6 { font-size: 1rem; }
     background-color: transparent;
     font-size: 1.4rem;
   }
+  .product__picture {
+    width: 60%;
+    height: 170px;
+  }
 }
