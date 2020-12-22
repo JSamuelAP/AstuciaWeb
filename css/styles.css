@@ -288,4 +288,10 @@ h6, .h6 { font-size: 1rem; }
                          "foto6 foto6 foto7 foto5"
                          "foto8 foto8 foto9 foto9";
   }
+  .team__logo {
+    height: 125px;
+  }
+  .cup__img {
+    height: 125px;
+  }
 }
