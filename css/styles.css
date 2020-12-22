@@ -247,8 +247,8 @@ h6, .h6 { font-size: 1rem; }
 .sponsors__img {
   width: 150px;
 }
-.sponsors__img:last-of-type {
-  margin: auto;
+.footer__copyright a {
+  text-decoration: underline;
 }
 .footer__copyright a:hover {
   color: var(--first-color);
@@ -293,5 +293,11 @@ h6, .h6 { font-size: 1rem; }
   }
   .cup__img {
     height: 125px;
+  }
+  .footer__follow-us a {
+    font-size: 50px;
+  }
+  .sponsors__img {
+    width: 125px;
   }
 }
