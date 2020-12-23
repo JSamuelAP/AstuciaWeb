@@ -45,7 +45,8 @@
 }
 
 /* large: 1024px */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
+  .container {padding: 0 80px;}
   .lg12 { width: 100%; }
   .lg11 { width: calc(calc(11 * 100%) / 12); }
   .lg10 { width: calc(calc(10 * 100%) / 12); }
