@@ -338,4 +338,20 @@ h6, .h6 { font-size: 1rem; }
     width: 100%;
     font-size: 1.25rem;
   }
+  .gallery-aside {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 120px);
+    grid-template-areas: "foto1 foto1 foto2 foto3 foto3"
+                         "foto1 foto1 foto4 foto4 foto4"
+                         "foto5 foto6 foto4 foto4 foto4"
+                         "foto5 foto7 foto4 foto4 foto4"
+                         "foto8 foto8 foto8 foto9 foto9";
+    grid-gap: 15px;
+  }
 }
