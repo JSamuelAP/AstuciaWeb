@@ -328,4 +328,14 @@ h6, .h6 { font-size: 1rem; }
   .products__button {
     font-size: 1.25rem;
   }
+  .latest-news__cards .card {
+    max-width: 300px;
+  }
+  .card__picture {
+    height: 160px;
+  }
+  .card .btn {
+    width: 100%;
+    font-size: 1.25rem;
+  }
 }
