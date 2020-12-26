@@ -354,4 +354,25 @@ h6, .h6 { font-size: 1rem; }
                          "foto8 foto8 foto8 foto9 foto9";
     grid-gap: 15px;
   }
+  .team__logo {
+    height: 100px;
+  }
+  .team__name {
+    font-size: 1.25rem;
+  }
+  .vs {
+    font-size: 1.5rem;
+  }
+  .match__data, .match__league {
+    font-size: 1rem;
+  }
+  .aside > .btn {
+    font-size: 1.25rem;
+  }
+  .honors__cup {
+    font-size: 1rem;
+  }
+  .cup__img {
+    height: 100px;
+  }
 }
