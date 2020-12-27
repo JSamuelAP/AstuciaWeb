@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="JSamuel">
+  <meta name="description" content="Página web oficial del club de fútbol ficticio Club Astucia">
   <title>Club Astucia Sitio Oficial</title>
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +20,7 @@
 </head>
 <body>
   <header class="container-fluid header">
-    <div class="container pv_2 lg-pv_3 flex jc-space-between md-jc-flex-end header__lang-links">
+    <div class="container flex jc-space-between md-jc-flex-end pv_2 lg-pv_3  header__lang-links">
       <div class="flex ai-center md-mr_3 header__choose-lang">
         <select class="choose-lang__form">
           <option class="choose-lang__option">Español</option>
@@ -32,14 +34,14 @@
         <a href="#" class="btn btn--transparent p_1 log__link">Registrarse</a>
       </div>
     </div>
-    <nav class="container-fluid bg-dark txt-white header__nav">
+    <nav class="container-fluid txt-white bg-dark header__nav">
       <div class="container flex jc-space-between md-ai-center pv_1">
         <div class="md-flex-auto header__main-menu">
           <input type="checkbox" id="main-menu__checkbox" class="none">
-          <label for="main-menu__checkbox" class="hover-txt-first md-none main-menu__icon">
+          <label for="main-menu__checkbox" class="md-none hover-txt-first main-menu__icon">
             <i class="fa fa-bars h1"></i>
           </label>
-          <ul class="mt_1 md-mt_0 nobullet bg-dark txt-first center md-flex main-menu__list">
+          <ul class="md-flex mt_1 md-mt_0 bg-dark nobullet txt-first center main-menu__list">
             <li class="main-menu__item"><a href="#" class="block pv_15 md-ph_2 lg-ph_3 main-menu__link">Inicio</a></li>
             <li class="main-menu__item"><a href="#" class="block pv_15 md-ph_2 lg-ph_3 main-menu__link">Productos</a></li>
             <li class="main-menu__item"><a href="#" class="block pv_15 md-ph_2 lg-ph_3 main-menu__link">Noticias</a></li>
@@ -47,7 +49,9 @@
           </ul>
         </div>
         <div class="md-flex-none header__logo">
-          <a href="#" class="header__home-link"><img src="img/CA-logo.svg" alt="Escudo Club Astucia" class="home-link__img"></a>
+          <a href="#" class="header__home-link">
+            <img src="img/CA-logo.svg" alt="Escudo del Club Astucia" class="home-link__img">
+          </a>
         </div>
         <div class="md-flex-none header__search">
           <a href="#" class="h1 search__btn">
@@ -57,26 +61,30 @@
       </div>
     </nav>
   </header>
-  <section class="container-fluid pv_4 md-pv_5 mb_5 lg-flex lg-ai-center lg-pv_0 hero">
+  <section class="container-fluid lg-flex lg-ai-center mb_5 pv_4 md-pv_5 lg-pv_0 hero">
     <div class="container txt-white center md-left hero__text">
-      <h1 class="mb_05 md-mb_1 lg-mb_15 hero__title">La <span class="txt-first">astucia</span> nos hace fuertes</h1>
-      <p class="h4 mb_15 md-mb_2 left  md9 lg7 hero__body">somos un equipo de fútbol con mucha historia, tradición y afición, representamos a la ciudad de León Gto desde octubre del 2016 y no hemos dejado de traer titulos y alegrias a la ciudad. Ven a apoyarnos en el Consuelo Arena</p>
-      <a href="#" class="btn btn--primary h4 ph_15 pv_05 md-ph_2 md-pv_1 lg-ph_5">Conseguir boletos</a>
+      <h1 class="mb_05 md-mb_1 lg-mb_15 hero__title">
+        La <span class="txt-first">astucia</span> nos hace fuertes
+      </h1>
+      <p class="lg7 md9 mb_15 md-mb_2 h4 left hero__body">
+        somos un equipo de fútbol con mucha historia, tradición y afición, representamos a la ciudad de León Gto desde octubre del 2016 y no hemos dejado de traer titulos y alegrias a la ciudad. Ven a apoyarnos en el Consuelo Arena
+      </p>
+      <a href="#" class="btn btn--primary ph_15 pv_05 md-ph_2 md-pv_1 lg-ph_5 h4">Conseguir boletos</a>
     </div>
   </section>
   <section class="container-fluid mb_5 products">
-    <div class="center container">
-      <h2 class="h1 mb_3 products__title">Productos</h2>
+    <div class="container center">
+      <h2 class="mb_3 h1 products__title">Productos</h2>
       <div class="lg-mb_3 f0 products__cards">
-        <article class="sm12 md4 lg2 i-b mb_3 md-mb_2 lg-mb_0 md-mr_2 pv_15 products__product">
+        <article class="i-b sm12 md4 lg2 mb_3 pv_15 md-mr_2 md-mb_2 lg-mb_0 products__product">
           <a href="#">
             <div class="m_auto mb_1 product__picture">
-              <img src="img/jersey.jpg" alt="Jersey 2022-2021">
+              <img src="img/jersey.jpg" alt="Jersey 2022-2021" class="product__img">
             </div>
             <h3 class="product__name">Jersey 2020-2021</h3>
           </a>
         </article>
-        <article class="sm12 md4 lg2 i-b mb_3 md-mb_2 lg-mb_0 pv_15 lg-mr_2 products__product">
+        <article class="i-b sm12 md4 lg2 mb_3 pv_15 md-mb_2 lg-mr_2 lg-mb_0 products__product">
           <a href="#">
             <div class="m_auto mb_1 product__picture">
               <img src="img/ball.png" alt="Balón UCL" class="product__img">
@@ -84,192 +92,214 @@
             <h3 class="product__name">Balón UCL</h3>
           </a>
         </article>
-        <article class="sm12 md4 lg2 i-b mb_3 lg-mb_0 md-mr_2 pv_15 products__product">
+        <article class="i-b sm12 md4 lg2 mb_3 pv_15 md-mr_2 lg-mb_0 products__product">
           <a href="#">
             <div class="m_auto mb_1 product__picture">
-              <img src="img/thermo.png" alt="Termo 1lt">
+              <img src="img/thermo.png" alt="Termo 1lt" class="product__img">
             </div>
             <h3 class="product__name">Termo 1lt</h3>
           </a>
         </article>
-        <article class="sm12 md4 lg2 i-b mb_3 lg-mb_0 pv_15  products__product">
+        <article class="i-b sm12 md4 lg2 mb_3 pv_15 lg-mb_0 products__product">
           <a href="#">
             <div class="m_auto mb_1 product__picture">
-              <img src="img/scarf.jpeg" alt="Bufanda">
+              <img src="img/scarf.jpeg" alt="Bufanda" class="product__img>
             </div>
             <h3 class="product__name">Bufanda</h3>
           </a>
         </article>
       </div>
-      <a href="#" class="btn btn--primary h3 ph_15 pv_05 md-ph_2 md-pv_1 lg-ph_3 products__button">Ir a la tienda</a>
+      <a href="#" class="btn btn--primary ph_15 pv_05 md-ph_2 md-pv_1 lg-ph_3 h3 products__button">Ir a la tienda</a>
     </div>
   </section>
   <section class="container_fluid mb_5 latest-news">
     <div class="container">
-      <h2 class="center h1 mb_3">Últimas noticias</h2>
+      <h2 class="mb_3 h1 center">Últimas noticias</h2>
       <div class="lg-flex lg-jc-space-around latest-news__cards">
-        <article class="sm12 md-flex lg-block lg4 pb_15 md-pb_0 mb_2 lg-mb_0 lg-mh_1 card">
-          <div class="md5 lg12 card__picture">
+        <article class="card md-flex lg-block sm12 lg4 pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
+          <div class="lg12 md5 card__picture">
             <img src="img/news1.jpg" alt="Hospital" class="card__img">
           </div>
-          <div class="md7 lg12 center md-left pv_05 ph_1 md-pv_1 md-ph_15 card__text">
-            <div class="left mb_15">
+          <div class="md7 lg12 pv_05 ph_1 md-pv_1 md-ph_15 center md-left card__text">
+            <div class="mb_15 left">
               <h3 class="mb_05 card__title">Noticia 1</h3>
-              <time class="txt-light h6 mb_05 card__date" datetime="2020-11-25">25 noviembre 2020</time>
+              <time class="mb_05 txt-light h6 card__date" datetime="2020-11-25">25 noviembre 2020</time>
               <p class="h5 card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro praesentium omnis.</p>
             </div>
-            <a href="#" class="btn btn--primary h4 pv_05 ph_3 lg-center">Leer más</a>
+            <a href="#" class="btn btn--primary pv_05 ph_3 h4 lg-center">Leer más</a>
           </div>
         </article>
-        <article class="sm12 md-flex lg-block lg4 pb_15 md-pb_0 mb_2 lg-mb_0 lg-mh_1 card">
-          <div class="md5 lg12 card__picture">
+        <article class="card md-flex lg-block sm12 lg4 pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
+          <div class="lg12 md5 card__picture">
             <img src="img/news2.jpg" alt="boletos de entrada al estadio" class="card__img">
           </div>
-          <div class="md7 lg12 center md-left pv_05 ph_1 md-pv_1 md-ph_15 card__text">
-            <div class="left mb_15">
+          <div class="md7 lg12 pv_05 ph_1 md-pv_1 md-ph_15 center md-left card__text">
+            <div class="mb_15 left">
               <h3 class="mb_05 card__title">Noticia 2</h3>
-              <time class="txt-light h6 mb_05 card__date" datetime="2021-01-03">03 enero 2021</time>
+              <time class="mb_05 txt-light h6 card__date" datetime="2021-01-03">03 enero 2021</time>
               <p class="h5 card__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, autem.</p>
             </div>
-            <a href="#" class="btn btn--primary h4 pv_05 ph_3 lg-center">Leer más</a>
+            <a href="#" class="btn btn--primary pv_05 ph_3 h4 lg-center">Leer más</a>
           </div>
         </article>
-        <article class="sm12 md-flex lg-block lg4 pb_15 md-pb_0 mb_2 lg-mb_0 lg-mh_1 card">
-          <div class="md5 lg12 card__picture">
+        <article class="card md-flex lg-block sm12 lg4 pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
+          <div class="lg12 md5 card__picture">
             <img src="img/news3.jpg" alt="copa del mundial" class="card__img">
           </div>
-          <div class="md7 lg12 center md-left pv_05 ph_1 md-pv_1 md-ph_15 card__text">
-            <div class="left mb_15">
+          <div class="md7 lg12 pv_05 ph_1 md-pv_1 md-ph_15 center md-left card__text">
+            <div class="mb_15 left">
               <h3 class="mb_05 card__title">Noticia 3</h3>
-              <time class="txt-light h6 mb_05 card__date" datetime="2021-01-10">10 enero 2021</time>
+              <time class="mb_05 txt-light h6 card__date" datetime="2021-01-10">10 enero 2021</time>
               <p class="h5 card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum nihil illo quae fuga.</p>
             </div>
-            <a href="#" class="btn btn--primary h4 pv_05 ph_3 lg-center">Leer más</a>
+            <a href="#" class="btn btn--primary pv_05 ph_3 h4 lg-center">Leer más</a>
           </div>
         </article>
       </div>
     </div>
   </section>
-  <section class="mb_5 container-fluid">
+  <section class="container-fluid mb_5">
     <div class="container gallery-aside">
-      <div class="gallery mb_5 lg-mb_0">
-        <h2 class="h1 mb_3 center gallery__title">Galería</h2>
+      <div class="mb_5 lg-mb_0 gallery">
+        <h2 class="mb_3 h1 center gallery__title">Galería</h2>
         <div class="gallery-container">
-          <div class="gallery__item"><img src="img/gallery1.jpg" alt="jugadores" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery2.jpg" alt="jugadores" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery3.jpg" alt="estadio" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery4.jpg" alt="estadio" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery5.jpg" alt="estadio" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery6.jpg" alt="balones" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery7.jpg" alt="balón en la red" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery8.jpg" alt="cancha" class="gallery__img"></div>
-          <div class="gallery__item"><img src="img/gallery9.jpg" alt="jugador" class="gallery__img"></div>
+          <div class="gallery__item">
+            <img src="img/gallery1.jpg" alt="jugadores disputando un balón" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery2.jpg" alt="jugador por la banda" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery3.jpg" alt="estadio por la noche" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery4.jpg" alt="estadio con atardecer" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery5.jpg" alt="estadio con afición" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery6.jpg" alt="balones nike" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery7.jpg" alt="balón en la red" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery8.jpg" alt="cancha de entrenamiento" class="gallery__img">
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery9.jpg" alt="pies de un jugador con balón" class="gallery__img">
+          </div>
         </div>
       </div>
       <aside class="p_3 lg-p_2 center aside">
-        <h2 class="h3 mb_2">Próximo partido</h2>
-        <div class="flex ai-center bold mb_15 teams">
-          <div class="sm5 home-team">
-            <div class="mb_1 team__logo">
-              <img src="img/CA-logo.svg" alt="escudo Club Astucia" class="team__img">
+        <section class="next-match">
+          <h2 class="mb_2 h3 next-match__title">Próximo partido</h2>
+          <div class="flex ai-center mb_15 bold teams">
+            <div class="sm5 next-match__team">
+              <div class="mb_1 team__logo">
+                <img src="img/CA-logo.svg" alt="escudo Club Astucia" class="team__img">
+              </div>
+              <p class="h4 team__name">Club Astucia</p>
             </div>
-            <p class="h4 team__name">Club Astucia</p>
-          </div>
-          <p class="sm2 h3 vs">vs</p>
-          <div class="sm5 away-team">
-            <div class="mb_1 team__logo">
-              <img src="img/Man-Utd-logo.png" alt="escudo Manchester United" class="team__img">
+            <p class="sm2 h3 vs">vs</p>
+            <div class="sm5 next-match__team">
+              <div class="mb_1 team__logo">
+                <img src="img/Man-Utd-logo.png" alt="escudo Manchester United" class="team__img">
+              </div>
+              <p class="h4 team__name">Man Utd</p>
             </div>
-            <p class="h4 team__name">Man Utd</p>
           </div>
-        </div>
-        <p class="h5 tiny mb_2 match__league">Jornada 17 | Liga MX</p>
-        <div class="h5 left mb_2 match__data">
-          <time class="block match__date" datetime="2020-12-9">
-            <i class="far fa-calendar-alt mr_05 md-mr_1"></i>
-            9 diciembre 2020
-          </time>
-          <time class="block match__hour" datetime="">
-            <i class="far fa-clock mr_05 md-mr_1"></i>
-            17:00 hrs
-          </time>
-          <p class="match__stadium">
-            <i class="fas fa-map-marker-alt mr_05 md-mr_1"></i>
-            Consuelo Arena
-          </p>
-        </div>
-        <a href="#" class="btn btn--ghost btn--ghost--dark h4 pv_05 ph_15 md-pv_1 md-ph_2 lg-pv_05 mb_3">Conseguir boletos</a>
-        <h2 class="h3 mb_2">Palmarés</h2>
-        <div class="f0 honors">
-          <div class="h5 sm6 i-b mb_15 honors__cup">
-            <img src="img/trophy-ligamx.png" alt="trofeo liga mx" class="cup__img">
-            <p class="cup__name">3 Liga MX</p>
+          <p class="mb_2 h5 tiny match__league">Jornada 17 | Liga MX</p>
+          <div class="mb_2 h5 left match__data">
+            <time class="block match__date" datetime="2020-12-9">
+              <i class="far fa-calendar-alt mr_05 md-mr_1"></i>
+              9 diciembre 2020
+            </time>
+            <time class="block match__hour" datetime="17:00">
+              <i class="far fa-clock mr_05 md-mr_1"></i>
+              17:00 hrs
+            </time>
+            <p class="match__stadium">
+              <i class="fas fa-map-marker-alt mr_05 md-mr_1"></i>
+              Consuelo Arena
+            </p>
           </div>
-          <div class="h5 sm6 i-b mb_15 honors__cup">
-            <img src="img/trophy-copamx.png" alt="trofeo copa mx" class="cup__img">
-            <p class="cup__name">1 Copa MX</p>
+          <a href="#" class="btn btn--ghost btn--ghost--dark pv_05 ph_15 mb_3 md-pv_1 md-ph_2 lg-pv_05 h4">Conseguir boletos</a>
+        </section>
+        <section class="honors">
+          <h2 class="mb_2 h3 honors__title">Palmarés</h2>
+          <div class="f0 honors__cups">
+            <article class="i-b sm6 mb_15 h5 honors__cup">
+              <img src="img/trophy-ligamx.png" alt="trofeo liga mx" class="cup__img">
+              <p class="cup__name">3 Liga MX</p>
+            </article>
+            <article class="i-b sm6 mb_15 h5 honors__cup">
+              <img src="img/trophy-copamx.png" alt="trofeo copa mx" class="cup__img">
+              <p class="cup__name">1 Copa MX</p>
+            </article>
+            <article class="i-b sm6 mb_15 h5 honors__cup">
+              <img src="img/trophy-ucl.png" alt="trofeo ucl" class="cup__img">
+              <p class="cup__name">1 UCL</p>
+            </article>
+            <article class="i-b sm6 h5 honors__cup">
+              <img src="img/trophy-mdc.png" alt="trofeo mundial de clubes" class="cup__img">
+              <p class="cup__name">1 Mundial de clubes</p>
+            </article>
           </div>
-          <div class="h5 sm6 i-b honors__cup">
-            <img src="img/trophy-ucl.png" alt="trofeo ucl" class="cup__img">
-            <p class="cup__name">1 UCL</p>
-          </div>
-          <div class="h5 sm6 i-b honors__cup">
-            <img src="img/trophy-mdc.png" alt="trofeo mundial de clubes" class="cup__img">
-            <p class="cup__name">1 Mundial de clubes</p>
-          </div>
-        </div>
+        </section>
       </aside>
     </div>
   </section>
-  <footer class="container-fluid bg-dark txt-white pv_2 md-pv_3 lg-pv_4 footer">
+  <footer class="container-fluid pv_2 md-pv_3 lg-pv_4 txt-white bg-dark footer">
     <div class="container flex flex-wrap">
       <div class="sm12 md7 mb_2 md-mb_3">
         <section class="mb_2 footer__contact">
-          <h3 class="mb_1">Contacto</h3>
-          <address class="h5">
-            <p class="mb_05">
+          <h3 class="mb_1 contact__title">Contacto</h3>
+          <address class="h5 contact__address">
+            <p class="mb_05 contact__location">
               <i class="fas fa-map-marker-alt mr_05 md-mr_1"></i>
               Consuelo Arena BLVD San Pedro
             </p>
-            <p class="mb_05">
+            <p class="mb_05 contact__tel">
               <i class="fas fa-phone mr_05 md-mr_1"></i>
               999-999-9999
             </p>
-            <a href="mailto:atencionclientes@astucia.ca.mx" class="txt-first contact__email-link">
+            <a href="mailto:atencionclientes@astucia.ca.mx" class="txt-first contact__email">
               <i class="far fa-envelope mr_05 md-mr_1"></i>
               atencionclientes@astucia.ca.mx
             </a>
           </address>
         </section>
         <section class="footer__newsletter">
-          <h3 class="mb_1">Suscribete a nuestro Boletín</h3>
-          <form class="h5">
-            <input type="email" placeholder="email" class="sm8 lg7 txt-white pv_05 pl_05 mr_05 newsletter__input">
+          <h3 class="mb_1 newsletter__title">Suscribete a nuestro Boletín</h3>
+          <form class="h5 newsletter__form">
+            <input type="email" placeholder="email" class="sm8 lg7 pv_05 pl_05 mr_05 txt-white newsletter__input">
             <input type="button" value="Enviar" class="btn btn--ghost btn--ghost--primary pv_05 ph_15 md-ph_2">
           </form>
         </section>
       </div>
       <section class="sm12 md5 mb_2 footer__follow-us">
-        <h3 class="mb_2">Siguenos</h3>
-        <div class="flex flex-wrap jc-space-around center follow-us__links">
-          <a href="https://facebook.com" target="_blank" class="md6 md-mb_2"><i class="fab fa-facebook"></i></a>
-          <a href="https://twitter.com" target="_blank" class="md6 md-mb_2"><i class="fab fa-twitter"></i></a>
-          <a href="https://instagram.com" target="_blank"class="md6"><i class="fab fa-instagram"></i></a>
-          <a href="https://youtube.com" target="_blank"class="md6"><i class="fab fa-youtube"></i></a>
+        <h3 class="mb_2 follow-us__title">Siguenos</h3>
+        <div class="flex flex-wrap jc-space-around center social__links">
+          <a href="https://facebook.com"  target="_blank" class="md6 md-mb_2 social__link"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com"   target="_blank" class="md6 md-mb_2 social__link"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" class="md6 social__link">        <i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com"   target="_blank" class="md6 social__link">        <i class="fab fa-youtube"></i></a>
         </div>
       </section>
       <section class="sm12 mb_2 md-mb_3 footer__sponsors">
         <div class="flex flex-wrap jc-space-between sponsors__logos">
-          <img src="img/spondor-adidas.svg" alt="logo de adidas" class="m_auto sponsors__img">
-          <img src="img/sponsor-coca-cola.svg" alt="logo coca-cola" class="m_auto sponsors__img">
-          <img src="img/sponsor-corona.svg" alt="logo de corona extra" class="m_auto sponsors__img">
-          <img src="img/sponsor-gillette.svg" alt="logo de gillette" class="m_auto sponsors__img">
-          <img src="img/sponsor-samsung.svg" alt="logo de samsung" class="m_auto sponsors__img">
+          <img src="img/spondor-adidas.svg"    alt="logo de adidas"       class="m_auto sponsors__img">
+          <img src="img/sponsor-coca-cola.svg" alt="logo coca-cola"       class="m_auto sponsors__img">
+          <img src="img/sponsor-corona.svg"    alt="logo de corona extra" class="m_auto sponsors__img">
+          <img src="img/sponsor-gillette.svg"  alt="logo de gillette"     class="m_auto sponsors__img">
+          <img src="img/sponsor-samsung.svg"   alt="logo de samsung"      class="m_auto sponsors__img">
         </div>
       </section>
       <section class="sm12 f0 center footer__copyright">
-        <p class="md6 md-i-b mb_05 md-mb_0 h6 md-left">2020 &copy; Club Astucia</p>
-        <p class="md6 md-i-b h6 md-right">
+        <p class="md-i-b md6 mb_05 md-mb_0 h6 md-left">2020 &copy; Club Astucia</p>
+        <p class="md-i-b md6 h6 md-right">
           <a href="#" class="mr_05 md-mr_1">Politicas de privacidad</a>
           <a href="#">Aviso legal</a>
         </p>

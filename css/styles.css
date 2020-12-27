@@ -218,7 +218,7 @@ h6, .h6 { font-size: 1rem; }
   width: 15px;
   text-align: center;
 }
-.contact__email-link {
+.contact__email {
   text-decoration: underline;
 }
 .newsletter__input {
