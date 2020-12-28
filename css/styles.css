@@ -35,6 +35,9 @@ body {
 }
 img { width: 100%; }
 a:hover { text-decoration: none; }
+#products:target,
+#news:target,
+#gallery:target { padding-top: 172px; }
 
 /* heading */
 h1, h2, h3,
@@ -304,7 +307,7 @@ h6, .h6 { font-size: 1rem; }
   .main-menu__list { font-size: 1.1rem; }
 
   /* hero */
-  .hero { height: calc(100vh - 163.6px); }
+  .hero { height: calc(100vh - 172px); }
 
   /* products */
   .product__picture {
