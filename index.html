@@ -87,15 +87,21 @@
         <article class="i-b sm12 md4 lg2 mb_3 pv_15 md-mb_2 lg-mr_2 lg-mb_0 products__product">
           <a href="#products">
             <div class="m_auto mb_1 product__picture">
-              <img src="img/ball.png" alt="Balón UCL" class="product__img" loading="lazy">
-            </div>
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/ball-w220.png">
+                <img src="img/ball.png" alt="Balón UCL" class="product__img" loading="lazy">
+              </picture>
+              </div>
             <h3 class="lg-h5 product__name">Balón UCL</h3>
           </a>
         </article>
         <article class="i-b sm12 md4 lg2 mb_3 pv_15 md-mr_2 lg-mb_0 products__product">
           <a href="#products">
             <div class="m_auto mb_1 product__picture">
-              <img src="img/thermo.png" alt="Termo 1lt" class="product__img" loading="lazy">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/thermo-w220.png">
+                <img src="img/thermo.png" alt="Termo 1lt" class="product__img" loading="lazy">
+              </picture>
             </div>
             <h3 class="lg-h5 product__name">Termo 1lt</h3>
           </a>
@@ -103,7 +109,11 @@
         <article class="i-b sm12 md4 lg2 mb_3 pv_15 lg-mb_0 products__product">
           <a href="#products">
             <div class="m_auto mb_1 product__picture">
-              <img src="img/scarf.jpeg" alt="Bufanda" class="product__img" loading="lazy">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/scarf-w220.jpeg">
+                <source media="(min-width: 768px)" srcset="img/scarf-w115.jpeg">
+                <img src="img/scarf.jpeg" alt="Bufanda" class="product__img" loading="lazy">
+              </picture>
             </div>
             <h3 class="lg-h5 product__name">Bufanda</h3>
           </a>
@@ -116,9 +126,13 @@
     <div class="container">
       <h2 class="mb_3 h1 center">Últimas noticias</h2>
       <div class="lg-flex lg-jc-space-around latest-news__cards">
-        <article class="card md-flex lg-block sm12 lg4 pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
+        <article class="card md-flex lg-block sm12 lg4 m_auto pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
           <div class="lg12 md5 card__picture">
-            <img src="img/news1.jpg" alt="Hospital" class="card__img" loading="lazy">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/news1-w440.jpg">
+              <source media="(min-width: 768px)" srcset="img/news1-w300.jpg">
+              <img src="img/news1.jpg" alt="Hospital" class="card__img" loading="lazy">
+            </picture>
           </div>
           <div class="md7 lg12 pv_05 ph_1 md-pv_1 md-ph_15 center md-left card__text">
             <div class="mb_15 left">
@@ -129,9 +143,13 @@
             <a href="#news" class="btn btn--primary pv_05 ph_3 h4 lg-h5 lg-center">Leer más</a>
           </div>
         </article>
-        <article class="card md-flex lg-block sm12 lg4 pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
+        <article class="card md-flex lg-block sm12 lg4 m_auto pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
           <div class="lg12 md5 card__picture">
-            <img src="img/news2.jpg" alt="boletos de entrada al estadio" class="card__img" loading="lazy">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/news2-w440.jpg">
+              <source media="(min-width: 768px)" srcset="img/news2-w300.jpg">
+              <img src="img/news2.jpg" alt="boletos de entrada al estadio" class="card__img" loading="lazy">
+            </picture>
           </div>
           <div class="md7 lg12 pv_05 ph_1 md-pv_1 md-ph_15 center md-left card__text">
             <div class="mb_15 left">
@@ -142,9 +160,13 @@
             <a href="#news" class="btn btn--primary pv_05 ph_3 h4 lg-h5 lg-center">Leer más</a>
           </div>
         </article>
-        <article class="card md-flex lg-block sm12 lg4 pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
+        <article class="card md-flex lg-block sm12 lg4 m_auto pb_15 mb_2 md-pb_0 lg-mh_1 lg-mb_0 news__card">
           <div class="lg12 md5 card__picture">
-            <img src="img/news3.jpg" alt="copa del mundial" class="card__img" loading="lazy">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/news3-w440.jpg">
+              <source media="(min-width: 768px)" srcset="img/news3-w300.jpg">
+              <img src="img/news3.jpg" alt="copa del mundial" class="card__img" loading="lazy">
+            </picture>
           </div>
           <div class="md7 lg12 pv_05 ph_1 md-pv_1 md-ph_15 center md-left card__text">
             <div class="mb_15 left">
@@ -164,7 +186,12 @@
         <h2 class="mb_3 h1 center gallery__title">Galería</h2>
         <div class="gallery-container">
           <div class="gallery__item">
-            <img src="img/gallery1.jpg" alt="jugadores disputando un balón" class="gallery__img" loading="lazy">
+            <picture>
+              <source media="(max-width: 479px)"  srcset="img/gallery1-w140.jpg">
+              <source media="(max-width: 767px)"  srcset="img/gallery1-w155.jpg">
+              <source media="(min-width: 1024px)" srcset="img/gallery1-w255.jpg">
+              <img src="img/gallery1.jpg" alt="jugadores disputando un balón" class="gallery__img" loading="lazy">
+            </picture>
           </div>
           <div class="gallery__item">
             <img src="img/gallery2.jpg" alt="jugador por la banda" class="gallery__img" loading="lazy">
@@ -173,10 +200,16 @@
             <img src="img/gallery3.jpg" alt="estadio por la noche" class="gallery__img" loading="lazy">
           </div>
           <div class="gallery__item">
-            <img src="img/gallery4.jpg" alt="estadio con atardecer" class="gallery__img" loading="lazy">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/gallery4-w390.jpg">
+              <img src="img/gallery4.jpg" alt="estadio con atardecer" class="gallery__img" loading="lazy">
+            </picture>
           </div>
           <div class="gallery__item">
-            <img src="img/gallery5.jpg" alt="estadio con afición" class="gallery__img" loading="lazy">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/gallery5-w155.jpg">
+              <img src="img/gallery5.jpg" alt="estadio con afición" class="gallery__img" loading="lazy">
+            </picture>
           </div>
           <div class="gallery__item">
             <img src="img/gallery6.jpg" alt="balones nike" class="gallery__img" loading="lazy">
